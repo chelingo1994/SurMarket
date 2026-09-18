@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SurMarket</string>
+    <string name="loginTitle">Iniciar Sesión</string>
+    <string name="loginUsername">Nombre de Usuario</string>
+</resources>
