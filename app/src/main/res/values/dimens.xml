@@ -3,4 +3,23 @@
     <dimen name="marginTop">30sp</dimen>
     <dimen name="textSize">15sp</dimen>
     <dimen name="paddingLeft">10sp</dimen>
+
+    <!-- Tamaños de texto reutilizables -->
+    <dimen name="text_size_title">18sp</dimen>
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_small">14sp</dimen>
+
+    <!-- Espaciados reutilizables -->
+    <dimen name="spacing_xs">8dp</dimen>
+    <dimen name="spacing_sm">12dp</dimen>
+    <dimen name="spacing_md">16dp</dimen>
+    <dimen name="spacing_lg">24dp</dimen>
+
+    <!-- Formas y alturas reutilizables -->
+    <dimen name="corner_radius_input">12dp</dimen>
+    <dimen name="corner_radius_button">24dp</dimen>
+    <dimen name="stroke_width_thin">1dp</dimen>
+    <dimen name="height_input">56dp</dimen>
+    <dimen name="height_button_min">48dp</dimen>
+    <dimen name="elevation_none">0dp</dimen>
 </resources>

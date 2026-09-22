@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta reutilizable de la pantalla de login -->
+    <color name="color_background">#F5F9FE</color>
+    <color name="color_primary">#0D80F2</color>
+    <color name="color_surface">#E8EDF2</color>
+    <color name="color_border">#D1DBE8</color>
+    <color name="color_text_primary">#0D141C</color>
+    <color name="color_text_secondary">#4A709C</color>
 </resources>
