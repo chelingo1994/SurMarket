@@ -1,30 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#F5F9FE"
+    android:fillViewport="true">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:ignore="ExtraText">
+        android:paddingHorizontal="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
 
+        <!-- Título -->
         <TextView
             android:id="@+id/txvLoginTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/loginTitle"
+            android:text="Iniciar sesión"
             android:textAlignment="center"
-            android:textSize="@dimen/textSize"
-            android:layout_marginTop="@dimen/marginTop"
+            android:textColor="#0D141C"
+            android:textSize="18sp"
             android:textStyle="bold"
-            />
+            tools:ignore="HardcodedText" />
 
+        <!-- Nombre de usuario -->
         <TextView
             android:id="@+id/txvLoginUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/loginUsername"
-            />
+            android:layout_marginTop="24dp"
+            android:text="Nombre de usuario"
+            android:textColor="#0D141C"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#E8EDF2"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#D1DBE8"
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/edtLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@null"
+                android:hint="Ingresa tu nombre de usuario"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="16dp"
+                android:textColor="#0D141C"
+                android:textColorHint="#4A709C"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Contraseña -->
+        <TextView
+            android:id="@+id/txvLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Contraseña"
+            android:textColor="#0D141C"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#E8EDF2"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:strokeColor="#D1DBE8"
+            app:strokeWidth="1dp">
+
+            <EditText
+                android:id="@+id/edtLoginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@null"
+                android:hint="Ingresa tu contraseña"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingHorizontal="16dp"
+                android:textColor="#0D141C"
+                android:textColorHint="#4A709C"
+                android:textSize="16sp"
+                tools:ignore="HardcodedText" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Recuperar contraseña -->
+        <TextView
+            android:id="@+id/txvLoginForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Recuperar contraseña"
+            android:textColor="#4A709C"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <!-- Empuja los botones al final de la pantalla -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <!-- Botones -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="48dp"
+            android:text="Iniciar sesión"
+            android:textAllCaps="false"
+            android:textColor="#F5F9FE"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#0D80F2"
+            app:cornerRadius="24dp"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:minHeight="48dp"
+            android:text="Regístrate aquí"
+            android:textAllCaps="false"
+            android:textColor="#0D141C"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="#E8EDF2"
+            app:cornerRadius="24dp"
+            tools:ignore="HardcodedText" />
     </LinearLayout>
 </ScrollView>
