@@ -7,4 +7,8 @@
     <string name="loginPasswordHint">Ingresa tu contraseña</string>
     <string name="loginForgotPassword">Recuperar contraseña</string>
     <string name="loginRegister">Regístrate aquí</string>
+    <string name="loginWelcome">Bienvenido a SurMarket</string>
+    <string name="loginError">Usuario o contraseña invalidos</string>
+    <string name="userEmpty">Ingrese su nombre de usuario</string>
+    <string name="passwordEmpty">Ingrese su contraseña</string>
 </resources>
