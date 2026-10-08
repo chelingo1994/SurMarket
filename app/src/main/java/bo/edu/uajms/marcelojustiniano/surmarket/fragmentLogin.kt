@@ -69,12 +69,14 @@ class fragmentLogin : Fragment() {
         var res=true
         if(user.isEmpty()){
             edtLoginUsername.error=getString(R.string.userEmpty)
+            res = false
         }
         else{
             edtLoginUsername.error=null
         }
         if(password.isEmpty()){
             edtLoginPassword.error=getString(R.string.passwordEmpty)
+            res = false
         }
         else{
             edtLoginPassword.error=null
