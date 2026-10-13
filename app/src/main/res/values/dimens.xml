@@ -22,4 +22,9 @@
     <dimen name="height_input">56dp</dimen>
     <dimen name="height_button_min">48dp</dimen>
     <dimen name="elevation_none">0dp</dimen>
+    <dimen name="titleHeight">56dp</dimen>
+    <dimen name="imagenViewIconSize">36dp</dimen>
+    <dimen name="imagenViewIcon_Padding">4dp</dimen>
+    <dimen name="cardview_controls">48dp</dimen>
+    <dimen name="cardview_default_corner_radius">12dp</dimen>
 </resources>
