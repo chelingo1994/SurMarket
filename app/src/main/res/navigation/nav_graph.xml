@@ -14,5 +14,12 @@
             android:id="@+id/action_fragmentLogin_to_products_list"
             app:destination="@id/productsListFragment" />
     </fragment>
+    <fragment
+        android:id="@id/productsListFragment"
+        android:name="bo.edu.uajms.marcelojustiniano.surmarket.FragmentProductsList"
+        android:label="@string/labelProductFragmentList"
+        android:layout="@layout/fragment_products_list">
+
+    </fragment>
 
 </navigation>

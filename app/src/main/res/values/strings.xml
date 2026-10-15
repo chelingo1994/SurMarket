@@ -16,4 +16,7 @@
     <string name="Shopping_Cart">Carrito de Compras</string>
     <string name="Shopping_Shearch">Buscar Producto</string>
     <string name="agregarTitle">Añadir Productos</string>
+    <string name="product">Producto</string>
+    <string name="IT_ProductsList_btnbuy">Comprar</string>
+    <string name="labelProductFragmentList">Lista de Productos</string>
 </resources>
