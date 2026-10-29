@@ -22,4 +22,19 @@
     <string name="category">Categoria</string>
     <string name="price">Precio</string>
     <string name="addCart">Adicionado al carrito</string>
+    <string name="producto_image">Imagen del Producto</string>
+    <string name="FRGAddProductoText">Seleccionar Imagen</string>
+    <string name="FRGAddProductoProductName">Nombre del Producto</string>
+    <string name="ETXFRGAddProduct_ProductName">Nombre del Producto</string>
+    <string name="FRGAddProductoProductPrice">Precio</string>
+    <string name="ETXFRGAddProduct_ProductPrice">Precio</string>
+    <string name="FRGAddProductoProductStock">Cantidad</string>
+    <string name="ETXFRGAddProduct_ProductStock">Cantidad</string>
+    <string name="FRGAddProductoProductDescription">Descripcion</string>
+    <string name="ETXFRGAddProduct_ProductDescription">Descripcion</string>
+    <string name="category_varon">Ropa de Varon</string>
+    <string name="category_mujer">Ropa de Mujer</string>
+    <string name="category_ninos">Ropa de Niños</string>
+    <string name="category_baby">Ropa de Bebe</string>
+    <string name="FRGAddProducto">Añadir Producto</string>
 </resources>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentAddProduct"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/fragmente_padding"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/CRV_FRGAddProduct_Image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardview_image_height"
+                android:layout_marginBottom="@dimen/cardview_default_buttom"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="@dimen/cardview_default_corner_radius_2"
+                app:cardElevation="@dimen/cardview_default_elevation"
+                >
+                <ImageView
+                    android:id="@+id/IMV_FRGAddProduct_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/producto_image"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_surmarket"
+                    >
+
+                </ImageView>
+            </androidx.cardview.widget.CardView>
+            <Button
+                android:id="@+id/btn_FRGAddProducts_AddImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_lg"
+                android:background="@drawable/bg_button_primary"
+                android:minHeight="@dimen/height_button_min"
+                android:text="@string/FRGAddProductoText"
+                android:textAllCaps="false"
+                android:textColor="@color/color_background"
+                android:textSize="@dimen/text_size_body"
+                android:textStyle="bold"
+
+                />
+            <TextView
+                android:id="@+id/txvFRGAddProduct_ProductName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/FRGAddProductoProductName"
+                android:textColor="@color/color_text_primary"
+                android:textSize="@dimen/text_size_body" />
+
+            <EditText
+                android:id="@+id/ETXFRGAddProduct_ProductName"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_input_2"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:background="@drawable/bg_input"
+                android:hint="@string/ETXFRGAddProduct_ProductName"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:textColor="@color/color_text_primary"
+                android:textColorHint="@color/color_text_secondary"
+                android:textSize="@dimen/text_size_body" />
+            <TextView
+                android:id="@+id/txvFRGAddProduct_ProductPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/FRGAddProductoProductPrice"
+                android:textColor="@color/color_text_primary"
+                android:textSize="@dimen/text_size_body" />
+
+            <EditText
+                android:id="@+id/ETXFRGAddProduct_ProductPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_input_2"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:background="@drawable/bg_input"
+                android:hint="@string/ETXFRGAddProduct_ProductPrice"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:textColor="@color/color_text_primary"
+                android:textColorHint="@color/color_text_secondary"
+                android:textSize="@dimen/text_size_body" />
+            <TextView
+                android:id="@+id/txvFRGAddProduct_ProductStock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/FRGAddProductoProductStock"
+                android:textColor="@color/color_text_primary"
+                android:textSize="@dimen/text_size_body" />
+
+            <EditText
+                android:id="@+id/ETXFRGAddProduct_ProductStock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_input_2"
+
+                android:background="@drawable/bg_input"
+                android:hint="@string/ETXFRGAddProduct_ProductStock"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:textColor="@color/color_text_primary"
+                android:textColorHint="@color/color_text_secondary"
+                android:textSize="@dimen/text_size_body" />
+            <TextView
+                android:id="@+id/txvFRGAddProduct_ProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="@string/FRGAddProductoProductDescription"
+                android:textColor="@color/color_text_primary"
+                android:textSize="@dimen/text_size_body" />
+
+            <EditText
+                android:id="@+id/ETXFRGAddProduct_ProductDescription"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/textview_multiline"
+                android:layout_marginTop="@dimen/spacing_xs"
+                android:background="@drawable/bg_input"
+                android:hint="@string/ETXFRGAddProduct_ProductDescription"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="@dimen/spacing_md"
+                android:textColor="@color/color_text_primary"
+                android:textColorHint="@color/color_text_secondary"
+                android:textSize="@dimen/text_size_body" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/CHP_FRGAddProducto_varon"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/chip_margin_end"
+                    android:text="@string/category_varon"
+                    android:textSize="16sp"
+                    />
+                <com.google.android.material.chip.Chip
+                android:id="@+id/CHP_FRGAddProducto_women"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/chip_margin_end"
+                android:text="@string/category_mujer"
+                android:textSize="16sp"
+                >
+                </com.google.android.material.chip.Chip>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp"
+                >
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/CHP_FRGAddProducto_ninos"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/chip_margin_end"
+                    android:text="@string/category_ninos"
+                    android:textSize="16sp"
+                    />
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/CHP_FRGAddProducto_baby"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/chip_margin_end"
+                    android:text="@string/category_baby"
+                    android:textSize="16sp"
+                    >
+                </com.google.android.material.chip.Chip>
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btn_FRGAddProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/bg_button_primary"
+                android:minHeight="@dimen/height_button_min"
+                android:text="@string/FRGAddProducto"
+                android:textAllCaps="false"
+                android:textColor="@color/color_background"
+                android:textSize="@dimen/text_size_body"
+                android:textStyle="bold"
+
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
