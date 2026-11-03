@@ -21,5 +21,15 @@
         android:layout="@layout/fragment_products_list">
 
     </fragment>
+    <action
+        android:id="@+id/action_product_List_to_add_product"
+        app:destination="@id/addProductFragment" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="bo.edu.uajms.marcelojustiniano.surmarket.models.FragmentAddProduct"
+        android:label="@string/labelproductFragmentAdd"
+        android:layout="@layout/fragment_add_products">
+
+    </fragment>
 
 </navigation>

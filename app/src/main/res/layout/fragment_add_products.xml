@@ -17,6 +17,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="@dimen/fragmente_padding"
+
+
             >
             <androidx.cardview.widget.CardView
                 android:id="@+id/CRV_FRGAddProduct_Image"
@@ -147,25 +149,47 @@
                 android:orientation="horizontal"
 
                 >
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProducto_varon"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/CHG_FRGAddProducto_category"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_varon"
-                    android:textSize="16sp"
-                    />
-                <com.google.android.material.chip.Chip
-                android:id="@+id/CHP_FRGAddProducto_women"
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/chip_margin_end"
-                android:text="@string/category_mujer"
-                android:textSize="16sp"
-                >
-                </com.google.android.material.chip.Chip>
+                    android:layout_marginBottom="16dp"
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_varon"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_varon"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_women"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_mujer"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_ninos"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_ninos"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_baby"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_baby"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
             </LinearLayout>
             <LinearLayout
@@ -174,25 +198,30 @@
                 android:orientation="horizontal"
                 android:layout_marginBottom="16dp"
                 >
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProducto_ninos"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/CHG_FRGAddProducto_availability"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_ninos"
-                    android:textSize="16sp"
-                    />
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/CHP_FRGAddProducto_baby"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/chip_margin_end"
-                    android:text="@string/category_baby"
-                    android:textSize="16sp"
-                    >
-                </com.google.android.material.chip.Chip>
+                    app:singleSelection="true"
+                    app:selectionRequired="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_available"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_disponible"
+                        android:textSize="16sp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/CHP_FRGAddProducto_no_available"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/category_no_disponible"
+                        android:textSize="16sp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
             </LinearLayout>
             <Button

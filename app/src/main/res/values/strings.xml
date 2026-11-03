@@ -37,4 +37,8 @@
     <string name="category_ninos">Ropa de Niños</string>
     <string name="category_baby">Ropa de Bebe</string>
     <string name="FRGAddProducto">Añadir Producto</string>
+    <string name="labelproductFragmentAdd">Añadir Producto</string>
+    <string name="addProduct">Añadir nuevo Producto</string>
+    <string name="category_disponible">Disponible</string>
+    <string name="category_no_disponible">No Disponible</string>
 </resources>
