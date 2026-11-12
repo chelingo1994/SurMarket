@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="profileTitle">Perfil</string>
+    <string name="profileBack">Volver</string>
+    <string name="profileAvatar">Foto de perfil</string>
+    <string name="profileEmail">Email</string>
+    <string name="profileFullName">Nombre completo</string>
+    <string name="profilePhone">Teléfono</string>
+    <string name="profileAddress">Dirección</string>
+    <string name="profileRegisterDate">Fecha de registro</string>
+    <string name="profileLastAccess">Último acceso</string>
+    <string name="profileGroups">Grupos</string>
+    <string name="profilePermissions">Permisos</string>
+    <string name="profileChangePassword">Cambiar contraseña</string>
+</resources>

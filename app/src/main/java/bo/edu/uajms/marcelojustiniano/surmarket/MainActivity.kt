@@ -2,9 +2,12 @@ package bo.edu.uajms.marcelojustiniano.surmarket
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity: AppCompatActivity()
 {
@@ -14,5 +17,22 @@ class MainActivity: AppCompatActivity()
         val navHostFragment=supportFragmentManager.findFragmentById(R.id.navHostFragment) as NavHostFragment
         val navController=navHostFragment.navController
         setupActionBarWithNavController(navController)
+
+        val bottomNavigation=findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigation.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            when (destination.id) {
+                R.id.fragmentLogin->{
+                    bottomNavigation.visibility= View.INVISIBLE
+                }
+                R.id.addProductFragment->{
+                    bottomNavigation.visibility= View.INVISIBLE
+                }
+                else->{
+                    bottomNavigation.visibility= View.VISIBLE
+                }
+            }
+        }
     }
 }

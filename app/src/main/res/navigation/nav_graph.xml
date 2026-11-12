@@ -31,5 +31,19 @@
         android:layout="@layout/fragment_add_products">
 
     </fragment>
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="bo.edu.uajms.marcelojustiniano.surmarket.FragmentProfile"
+        android:label="@string/labelprofileFragment"
+        android:layout="@layout/fragment_profile">
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCart"
+        android:name="bo.edu.uajms.marcelojustiniano.surmarket.FragmentCart"
+        android:label="@string/labelcartFragment"
+        android:layout="@layout/fragment_cart">
+
+    </fragment>
 
 </navigation>

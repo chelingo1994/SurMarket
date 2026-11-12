@@ -41,4 +41,9 @@
     <string name="addProduct">Añadir nuevo Producto</string>
     <string name="category_disponible">Disponible</string>
     <string name="category_no_disponible">No Disponible</string>
+    <string name="home">Inicio</string>
+    <string name="labelprofileFragment">Perfil</string>
+    <string name="labelcartFragment">Carrito</string>
+    <string name="profile">Perfil</string>
+    <string name="cart">Carrito</string>
 </resources>

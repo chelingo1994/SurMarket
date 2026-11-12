@@ -1,6 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/color_background"
+    android:fillViewport="true"
+    tools:context=".FragmentProfile">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/spacing_md"
+        android:paddingBottom="@dimen/spacing_md">
+
+        <!-- Barra superior: flecha + título -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleHeight">
+
+            <ImageView
+                android:id="@+id/imvProfileBack"
+                android:layout_width="@dimen/imagenViewIconSize"
+                android:layout_height="@dimen/imagenViewIconSize"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/profileBack"
+                android:padding="@dimen/imagenViewIcon_Padding"
+                android:src="@drawable/ic_profile_back"
+                app:tint="@color/color_text_primary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/profileTitle"
+                android:textColor="@color/color_text_primary"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Avatar (círculo) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_md"
+            app:cardBackgroundColor="@color/color_surface"
+            app:cardCornerRadius="64dp"
+            app:cardElevation="@dimen/elevation_none">
+
+            <ImageView
+                android:id="@+id/imvProfileAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/profileAvatar"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_profile_person" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Usuario e ID -->
+        <TextView
+            android:id="@+id/txvProfileUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:gravity="center"
+            android:text="Usuario123"
+            android:textColor="@color/color_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txvProfileId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="ID: 456789"
+            android:textColor="@color/color_text_secondary"
+            android:textSize="@dimen/text_size_small"
+            tools:ignore="HardcodedText" />
+
+        <!-- ===== Filas de datos ===== -->
+        <LinearLayout style="@style/ProfileRow" android:layout_marginTop="@dimen/spacing_lg">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_email"
+                android:contentDescription="@string/profileEmail" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileEmail" />
+                <TextView android:id="@+id/txvProfileEmail" style="@style/ProfileValue"
+                    android:text="usuario123@email.com" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_person"
+                android:contentDescription="@string/profileFullName" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileFullName" />
+                <TextView android:id="@+id/txvProfileFullName" style="@style/ProfileValue"
+                    android:text="Juan Pérez" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_phone"
+                android:contentDescription="@string/profilePhone" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profilePhone" />
+                <TextView android:id="@+id/txvProfilePhone" style="@style/ProfileValue"
+                    android:text="+52 55 1234 5678" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_location"
+                android:contentDescription="@string/profileAddress" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileAddress" />
+                <TextView android:id="@+id/txvProfileAddress" style="@style/ProfileValue"
+                    android:text="Calle Principal 123, Ciudad, Estado" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_calendar"
+                android:contentDescription="@string/profileRegisterDate" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileRegisterDate" />
+                <TextView android:id="@+id/txvProfileRegisterDate" style="@style/ProfileValue"
+                    android:text="15 de marzo de 2023" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_clock"
+                android:contentDescription="@string/profileLastAccess" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileLastAccess" />
+                <TextView android:id="@+id/txvProfileLastAccess" style="@style/ProfileValue"
+                    android:text="20 de mayo de 2024, 10:30 AM" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_group"
+                android:contentDescription="@string/profileGroups" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profileGroups" />
+                <TextView android:id="@+id/txvProfileGroups" style="@style/ProfileValue"
+                    android:text="Administradores, Usuarios" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout style="@style/ProfileRow">
+            <ImageView style="@style/ProfileIconBox" android:src="@drawable/ic_profile_key"
+                android:contentDescription="@string/profilePermissions" />
+            <LinearLayout style="@style/ProfileTextColumn">
+                <TextView style="@style/ProfileLabel" android:text="@string/profilePermissions" />
+                <TextView android:id="@+id/txvProfilePermissions" style="@style/ProfileValue"
+                    android:text="Leer, Escribir, Eliminar" tools:ignore="HardcodedText" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Botón alineado a la derecha -->
+        <Button
+            android:id="@+id/btnChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:background="@drawable/bg_button_secondary"
+            android:minHeight="@dimen/height_button_min"
+            android:paddingHorizontal="@dimen/button_padding_horizontal"
+            android:text="@string/profileChangePassword"
+            android:textAllCaps="false"
+            android:textColor="@color/color_text_primary"
+            android:textSize="@dimen/text_size_small"
+            android:textStyle="bold" />
+    </LinearLayout>
 </ScrollView>
